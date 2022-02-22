@@ -23,9 +23,10 @@ img{
     grid-template-areas: 
     "header header"
     "aside content"
+    "footer footer"
     ;
     gap: 2rem;
-    background: #000;
+    background: #111111;
 }
 
 @media(max-width:760px){
@@ -34,6 +35,7 @@ img{
         "header header"
         "content content"
         "aside aside"
+        "footer footer"
         ;
     }
     .aside{
@@ -117,9 +119,9 @@ img{
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 30px;
-    background: #141414;
-    border-radius: 10px;
+    background: #000;
     width: 100%;
+    border: 2px solid #333333;
 }
 
 .work{
@@ -132,10 +134,6 @@ img{
     color: #fff;
 }
 
-.work img{
-    border-radius: 10px;
-}
-
 .work h2{
     font-size: 2rem;
     border-bottom: 2px solid #A41D23;
@@ -144,5 +142,13 @@ img{
 .work p{
     font-family: 'Courier New', Courier, monospace;
 }
-
 /*Content*/
+
+footer{
+    grid-area: footer;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
